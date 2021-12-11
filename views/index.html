@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.min.css" type="text/css"/>
+  </head>
+
+  <body>
+    <h1 class="title"><span>todo</span>list</h1>
+
+    <!-- <div class="all-tasks" style="margin-top: -50px;">
+      <h2 class="task-list-title">My lists</h2>
+      <ul class="task-list" data-section>
+        <li class="list-name active-list">Youtube</li>
+        <li class="list-name">Work</li>
+        <li class="list-name">Grocery</li>
+      </ul>
+
+      <form action="">
+        <input 
+          type="text"
+          class="new list"
+          placeholder="new list name"
+          aria-label="new list name"
+        />
+        <button class="btn create" aria-label="create new list">+</button>
+      </form>
+    </div> -->
+    <div class="todo-container">
+    <div class="todo-list" style="margin-top: -20px; border-radius: 15px; overflow: hidden;">
+      <div class="todo-header">
+        <h2 class="list-title">My todo list!</h2>
+        <p class="task-count" ><span data-tasks-remaining></span> tasks remaining</p>
+      </div>
+
+      <div class="todo-body" data-todo-body>
+        <div class="tasks" data-todos>
+            <div class="task">
+                <input 
+                  type="checkbox"
+                  id="yoo"
+                />
+                <label for="yoo" >
+                  <span class="custom-checkbox"></span>
+                  a third task
+                </label>
+                <span class="delete-todo">X</span>
+          </div>
+        </div>
+
+        <div class="new-task-creator">
+          <form class="new-todo-form">
+                <input 
+                  type="text"
+                  class="new task task-input"
+                  placeholder="new task name"
+                  aria-label="new task name"
+                />
+            <button type="submit" class="btn create" aria-label="create new task">+</button>
+          </form>
+        </div>
+
+        <div class="delete-stuff">
+          <button class="btn delete">Clear completed tasks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script defer src="scripts.js" type="text/javascript"></script>
+  </body>
+</html>
